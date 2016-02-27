@@ -1,0 +1,163 @@
+[
+  {
+    "id": "1",
+    "name": "Goblin",
+    "familyId": "2",
+    "picture": "Goblin.png",
+    "description": "A low level goblin card."
+  },
+  {
+    "id": "2",
+    "name": "Crab",
+    "familyId": "3",
+    "picture": "Crab.png",
+    "description": "Basic card of a crab."
+  },
+  {
+    "id": "3",
+    "name": "Turtle",
+    "familyId": "3",
+    "picture": "Turtle.png",
+    "description": "Rare creature that lives in the oceans. Turtles have high defensive abilities."
+  },
+  {
+    "id": "4",
+    "name": "Minotaur",
+    "familyId": "2",
+    "picture": "Minotaur.png",
+    "description": "Legendary creature Minotaur."
+  },
+  {
+    "id": "5",
+    "name": "Black Beetle",
+    "familyId": "4",
+    "picture": "Beetle-black.png",
+    "description": "Armored insects that scurry around in forests"
+  },
+  {
+    "id": "6",
+    "name": "Aurora",
+    "familyId": "1",
+    "picture": "Aurora.jpg",
+    "description": "..."
+  },
+  {
+    "id": "7",
+    "name": "Bomb",
+    "familyId": "5",
+    "picture": "Bomb.png",
+    "description": "These enchanted explosives are named for exactly the inanimate objects they most resemble – bombs."
+  },
+  {
+    "id": "8",
+    "name": "Cactuar",
+    "familyId": "6",
+    "picture": "Cactuar.png",
+    "description": "Sabotenders"
+  },
+  {
+    "id": "9",
+    "name": "Chocobo",
+    "familyId": "7",
+    "picture": "Chocobo.png",
+    "description": "These large"
+  },
+  {
+    "id": "10",
+    "name": "Steel Shell",
+    "familyId": "8",
+    "picture": "Crab2.png",
+    "description": "Crabs"
+  },
+  {
+    "id": "11",
+    "name": "Lu Shang's fishing rod",
+    "familyId": "9",
+    "picture": "LuShang.png",
+    "description": "Lu Shang's legendary fishing rod. Legend tells that  the notorious sea dragon was caught with this very rod."
+  },
+  {
+    "id": "12",
+    "name": "Mandragora",
+    "familyId": "10",
+    "picture": "Mandragora.png",
+    "description": "It is speculated that as Mandragoras mature"
+  },
+  {
+    "id": "13",
+    "name": "Phosphorus",
+    "familyId": "1",
+    "picture": "Phosphorus.jpg",
+    "description": "..."
+  },
+  {
+    "id": "14",
+    "name": "Ghost",
+    "familyId": "11",
+    "picture": "Sluagh.png",
+    "description": "In Irish and Scottish folklore"
+  },
+  {
+    "id": "15",
+    "name": "Snoll",
+    "familyId": "5",
+    "picture": "Snoll.png",
+    "description": "A close relative of the Bombs"
+  },
+  {
+    "id": "16",
+    "name": "Spider",
+    "familyId": "4",
+    "picture": "Spider.png",
+    "description": "Nasty fella"
+  },
+  {
+    "id": "17",
+    "name": "Swirl",
+    "familyId": "1",
+    "picture": "Swirl.jpg",
+    "description": "..."
+  },
+  {
+    "id": "18",
+    "name": "Tonberry",
+    "familyId": "2",
+    "picture": "Tonberry.png",
+    "description": "Tonberries are most like small lizard-men in appearance"
+  },
+  {
+    "id": "19",
+    "name": "Ash Wyvern",
+    "familyId": "12",
+    "picture": "Wyvern.png",
+    "description": "A small dragon-like wyvern."
+  },
+  {
+    "id": "20",
+    "name": "Bo",
+    "familyId": "2",
+    "picture": "Bo.png",
+    "description": "...?"
+  },
+  {
+    "id": "21",
+    "name": "Hattiwatti",
+    "familyId": "5",
+    "picture": "Hattiwatti.png",
+    "description": "TODO"
+  },
+  {
+    "id": "22",
+    "name": "Pugil",
+    "familyId": "3",
+    "picture": "Pugil.png",
+    "description": "TODO"
+  },
+  {
+    "id": "23",
+    "name": "Moleman",
+    "familyId": "2",
+    "picture": "Moleman.png",
+    "description": "TODO"
+  }
+]

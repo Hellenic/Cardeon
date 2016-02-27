@@ -1,0 +1,67 @@
+{
+  "name": "Card",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "attack": {
+      "type": "number",
+      "required": true
+    },
+    "defence": {
+      "type": "number",
+      "required": true
+    },
+    "magicdefence": {
+      "type": "number",
+      "required": true
+    },
+    "arrows": {
+      "type": "number",
+      "required": true
+    },
+    "rank": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    },
+    "signature": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    },
+    "updated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "template": {
+      "type": "belongsTo",
+      "model": "CardTemplate",
+      "foreignKey": "templateId"
+    },
+    "element": {
+      "type": "belongsTo",
+      "model": "CardElement",
+      "foreignKey": "elementId"
+    },
+    "type": {
+      "type": "belongsTo",
+      "model": "CardType",
+      "foreignKey": "typeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

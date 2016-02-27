@@ -1,0 +1,37 @@
+[{
+	"id": 1,
+	"name": "Unknown"
+}, {
+	"id": 2,
+	"name": "Creature"
+}, {
+	"id": 3,
+	"name": "Animal"
+}, {
+	"id": 4,
+	"name": "Vermin"
+}, {
+	"id": 5,
+	"name": "Arcana"
+}, {
+	"id": 6,
+	"name": "Sabotendar"
+}, {
+	"id": 7,
+	"name": "Bird"
+}, {
+	"id": 8,
+	"name": "Crab"
+}, {
+	"id": 9,
+	"name": "Item"
+}, {
+	"id": 10,
+	"name": "Plantoid"
+}, {
+	"id": 11,
+	"name": "Ghost"
+}, {
+	"id": 12,
+	"name": "Dragon"
+}]

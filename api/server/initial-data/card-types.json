@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Physical",
+    "description": "Attacks only with physical attacks"
+  },
+  {
+    "id": 2,
+    "name": "Magical",
+    "description": "Attacks only with magical attacks"
+  },
+  {
+    "id": 3,
+    "name": "Escapade",
+    "description": "Attacks to lowest defence"
+  },
+  {
+    "id": 4,
+    "name": "Master",
+    "description": "Uses highest attack to attack the lowest defence"
+  },
+  {
+    "id": 5,
+    "name": "Special",
+    "description": "Special abilities. Depends on the card."
+  }
+]

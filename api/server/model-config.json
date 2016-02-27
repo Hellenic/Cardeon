@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Card": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CardTemplate": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Title": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CardType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CardFamily": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CardElement": {
+    "dataSource": "db",
+    "public": true
+  }
+}

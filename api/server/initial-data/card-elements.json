@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1",
+    "name": "No name",
+    "type": "null"
+  },
+  {
+    "id": "2",
+    "name": "Fire",
+    "type": "fire"
+  },
+  {
+    "id": "3",
+    "name": "Earth",
+    "type": "earth"
+  },
+  {
+    "id": "4",
+    "name": "Wind",
+    "type": "wind"
+  },
+  {
+    "id": "5",
+    "name": "Water",
+    "type": "water"
+  },
+  {
+    "id": "6",
+    "name": "Ice",
+    "type": "ice"
+  },
+  {
+    "id": "7",
+    "name": "Lightning",
+    "type": "lightning"
+  },
+  {
+    "id": "8",
+    "name": "Nature",
+    "type": "nature"
+  },
+  {
+    "id": "9",
+    "name": "Light",
+    "type": "light"
+  },
+  {
+    "id": "10",
+    "name": "Dark",
+    "type": "dark"
+  },
+  {
+    "id": "11",
+    "name": "Metal",
+    "type": "metal"
+  },
+  {
+    "id": "12",
+    "name": "Energy",
+    "type": "energy"
+  },
+  {
+    "id": "13",
+    "name": "Plasma",
+    "type": "plasma"
+  },
+  {
+    "id": "14",
+    "name": "Spirit",
+    "type": "spirit"
+  },
+  {
+    "id": "15",
+    "name": "Psychic",
+    "type": "psychic"
+  }
+]
