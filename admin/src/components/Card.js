@@ -1,4 +1,5 @@
 import React from 'react';
+import CardPicture from './CardPicture';
 
 class Card extends React.Component {
 
@@ -8,12 +9,11 @@ class Card extends React.Component {
     {
       return (<div className="ui card">...</div>);
     }
+    let pictureUrl = 'images/cards/' + card.template.picture;
 
     return (
       <div className="ui card">
-        <div className="image">
-          <img src={'images/cards/' + card.template.picture} />
-        </div>
+        <CardPicture url={pictureUrl} arrows={card.arrows} />
         <div className="content">
           <a className="header">{card.name}</a>
           <div className="meta">

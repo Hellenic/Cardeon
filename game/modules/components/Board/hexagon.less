@@ -1,0 +1,30 @@
+svg.hexagon {
+  & {
+    width: 15%;
+    margin: 0 auto;
+    // transform-origin: 50% 50%;
+  }
+  &:hover {
+    .hexagon-shape {
+      fill-opacity: 1;
+    }
+    .hexagon-text {
+      fill-opacity: 1;
+    }
+  }
+
+  .hexagon-shape {
+    stroke-width: 2;
+    stroke: teal;
+    fill-opacity: 0.6;
+    transition: fill-opacity .8s;
+  }
+
+  .hexagon-text {
+    stroke-width: 0.5;
+    stroke: teal;
+    fill-opacity: 0.4;
+    fill: teal;
+    transition: fill-opacity .8s;
+  }
+}
