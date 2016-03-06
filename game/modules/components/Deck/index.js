@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Hexagon from './CardHexagon';
+import Hexagon from './Hexagon';
 
 class HexagonBoard extends React.Component {
   constructor(props) {
@@ -19,21 +19,12 @@ class HexagonBoard extends React.Component {
   }
 
   render() {
-
-    let rows = [];
-    for (let w=0; w<this.props.width; w++)
-    {
-      for (let h=0; h<this.props.height; h++)
-      {
-        // TODO Rows & Columns
-      }
-    }
-
     let cards = this.state.cards.map((card, index) => {
-      return (<Hexagon key={index} data={card} />);
+      return (<Hexagon key={index} card={card} draggable={true} />);
     });
     return (
-      <div className="ui link centered cards">
+      <div>
+        <h3>Your deck:</h3>
         {cards}
       </div>
     );

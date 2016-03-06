@@ -1,6 +1,6 @@
 .hexagon {
-  width: 15%;
-  margin: 0 auto;
+  width: 5em;
+  margin: 0 1.38em;
 }
 .hexagon:hover .polygon {
   fill-opacity: 1;
@@ -12,12 +12,12 @@
   stroke-width: 2;
   stroke: teal;
   fill-opacity: 0.6;
-  transition: fill-opacity .8s;
+  transition: fill-opacity .5s;
 }
 .text {
   stroke-width: 0.5;
   stroke: teal;
   fill-opacity: 0.4;
   fill: teal;
-  transition: fill-opacity .8s;
+  transition: fill-opacity .5s;
 }

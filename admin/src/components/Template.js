@@ -12,7 +12,7 @@ class Template extends React.Component {
     return (
       <div className="ui card">
         <div className="image">
-          <img src={'images/cards/' + template.picture} />
+          <img src={'http://localhost:7979/cards/' + template.picture} />
         </div>
         <div className="content">
           <a className="header">{template.name}</a>

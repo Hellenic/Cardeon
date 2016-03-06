@@ -1,0 +1,20 @@
+.board {
+  margin: 0;
+}
+
+.row  {
+  margin-bottom: -2.9em;
+}
+
+.hexagon {
+  width: 5em;
+  margin: 0 1.38em;
+}
+
+.even {
+  margin-left: 3.88em;
+}
+
+.odd {
+
+}
