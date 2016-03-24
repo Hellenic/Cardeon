@@ -9,7 +9,7 @@ class Card extends React.Component {
     {
       return (<div className="ui card">...</div>);
     }
-    let pictureUrl = 'http://localhost:7979/cards/' + card.template.picture;
+    let pictureUrl = 'http://localhost:7993/cards/' + card.template.picture;
 
     return (
       <div className="ui card">

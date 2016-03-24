@@ -1,6 +1,6 @@
 'use strict';
 let path = require('path');
-let port = 8000;
+let port = 7991;
 let srcPath = path.join(__dirname, '/../src');
 let publicPath = 'assets/';
 let additionalPaths = [];

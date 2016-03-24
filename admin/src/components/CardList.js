@@ -11,7 +11,7 @@ class CardList extends React.Component {
   }
 
   componentWillMount() {
-    axios.get('http://0.0.0.0:3000/api/Cards?filter[include]=template&filter[include]=element&filter[include]=type').then(response => {
+    axios.get('http://0.0.0.0:7992/api/Cards?filter[include]=template&filter[include]=element&filter[include]=type').then(response => {
       this.setState({
         cards: response.data
       })

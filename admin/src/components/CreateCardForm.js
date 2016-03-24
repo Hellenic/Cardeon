@@ -37,13 +37,13 @@ class CreateCardForm extends React.Component {
     arrowsInput.value = Math.floor(Math.random() * 255);
   }
   componentWillMount() {
-    axios.get('http://0.0.0.0:3000/api/CardTemplates?filter[include]=family').then(response => {
+    axios.get('http://0.0.0.0:7992/api/CardTemplates?filter[include]=family').then(response => {
       this.setState({ templates: response.data });
     });
-    axios.get('http://0.0.0.0:3000/api/CardElements').then(response => {
+    axios.get('http://0.0.0.0:7992/api/CardElements').then(response => {
       this.setState({ elements: response.data });
     });
-    axios.get('http://0.0.0.0:3000/api/CardTypes').then(response => {
+    axios.get('http://0.0.0.0:7992/api/CardTypes').then(response => {
       this.setState({ types: response.data });
     });
   }

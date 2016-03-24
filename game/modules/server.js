@@ -19,4 +19,5 @@ function getApp(req, res, cb) {
 
 createServer(getApp).start()
 
-console.log("Cardeon server started on port 8080! ==> http://localhost:8080/")
+let PORT = process.env.PORT || 8080;
+console.log(`Cardeon server started on port ${PORT}! ==> http://localhost:${PORT}/`)

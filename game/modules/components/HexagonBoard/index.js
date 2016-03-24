@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Hexagon from './Hexagon';
+import Hexagon from '../Hexagon';
 import css from './board.css'
 
 class HexagonBoard extends React.Component {

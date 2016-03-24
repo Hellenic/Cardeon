@@ -11,7 +11,7 @@ class CardTemplateList extends React.Component {
   }
 
   componentWillMount() {
-    axios.get('http://0.0.0.0:3000/api/CardTemplates?filter[include]=family').then(response => {
+    axios.get('http://0.0.0.0:7992/api/CardTemplates?filter[include]=family').then(response => {
       this.setState({
         templates: response.data
       })

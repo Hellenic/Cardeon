@@ -11,6 +11,7 @@ app.get('/', function (req, res) {
   res.send(images);
 });
 
-app.listen(7979);
+var port = 7993;
+app.listen(port);
 
-console.log("Image bank server up and running on port 7979! ==> http://localhost:7979/");
+console.log(`Image bank server up and running on port ${port}! ==> http://localhost:${port}/`);
