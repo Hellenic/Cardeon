@@ -25,6 +25,7 @@ class HexagonBoard extends React.Component {
     return (
       <div>
         <h3>Your deck:</h3>
+        <small>You can drag cards from your deck to the board.</small><br />
         {cards}
       </div>
     );

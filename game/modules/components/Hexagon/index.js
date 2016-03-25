@@ -33,7 +33,8 @@ class CardHexagon extends React.Component {
     let cardData = JSON.parse(event.dataTransfer.getData('card'));
     this.setState({
       card: cardData
-    })
+    });
+    this.props.onDrop(cardData, this.props.row, this.props.col);
   }
 
   handleDrag(event) {
@@ -73,7 +74,8 @@ class CardHexagon extends React.Component {
 
 CardHexagon.defaultProps = {
   card: null,
-  draggable: false
+  draggable: false,
+  onDrop: () => {}
 };
 
 export default CardHexagon;
