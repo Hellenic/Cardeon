@@ -10,7 +10,7 @@ export default React.createClass({
         <h1>Cardeon Client</h1>
         <ul>
           <li><IndexLink to="/">Home</IndexLink></li>
-          <li><Link to="/board">Game board</Link></li>
+          <li><Link to="/game">Game board</Link></li>
         </ul>
         {this.props.children}
       </div>

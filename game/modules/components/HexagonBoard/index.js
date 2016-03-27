@@ -7,7 +7,8 @@ class HexagonBoard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      rows: [],
+      cardSlots: []
     };
   }
 
@@ -18,7 +19,8 @@ class HexagonBoard extends React.Component {
       let rowSlots = [];
       for (let col=0; col<this.props.width; col++)
       {
-        rowSlots.push((<Hexagon key={row+'-'+col} row={row} col={col} onDrop={(card, row, col) => {this.handleDrop(card, row, col)}} />));
+        let hexagon = (<Hexagon key={row+'-'+col} row={row} col={col} onDrop={(card, row, col) => {this.handleDrop(card, row, col)}} />);
+        rowSlots.push(hexagon);
       }
 
       let rowClasses = css.row + ' ';
@@ -36,12 +38,29 @@ class HexagonBoard extends React.Component {
   }
 
   getNearbySlots(row, col) {
-    return 'Not implemented yet!';
+    let nearby = this.state.cardSlots.filter(slot => {
+      if (slot.row == row-1 || slot.row == row || slot.row == row+1)
+      {
+        if (slot.col == col-1 || slot.col == col || slot.col == col+1)
+        {
+          return true;
+        }
+      }
+
+      return false;
+    });
+
+    return nearby;
   }
 
   handleDrop(card, row, col) {
-    console.log('Card dropped', card, row, col);
-    console.log('Anything nearby?', this.getNearbySlots(row, col));
+    let cardSlots = this.state.cardSlots;
+    cardSlots.push({ row: row, col: col, card: card });
+    this.setState({
+      cardSlots: cardSlots
+    });
+
+    console.log('Nearby slots with cards', this.getNearbySlots(row, col));
   }
 
   render() {

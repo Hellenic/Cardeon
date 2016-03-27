@@ -6,14 +6,14 @@ import { ServerRoute, lazy } from 'react-project'
 import App from './components/App'
 import Home from './components/Home'
 import NoMatch from './components/NoMatch'
-import loadBoard from 'bundle?lazy!./components/Board'
+import loadGame from 'bundle?lazy!./components/Game'
 import hello from './api/hello'
 
 export default (
   <Route>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
-      <Route path="board" getComponent={lazy(loadBoard)}/>
+      <Route path="game" getComponent={lazy(loadGame)}/>
     </Route>
     <ServerRoute path="/api">
       <ServerRoute path=":hello" get={hello}/>

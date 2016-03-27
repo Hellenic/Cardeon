@@ -6,9 +6,8 @@ export default React.createClass({
     return (
       <div>
         <Title render={prev => `${prev} | Home`}/>
-        <p>Home!</p>
+        <h1>Hexagon grid</h1>
       </div>
     )
   }
 })
-

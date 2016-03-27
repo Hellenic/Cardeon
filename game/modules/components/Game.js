@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from 'react-title-component'
-import Deck from '../Deck';
-import HexagonBoard from '../HexagonBoard';
+import Deck from './Deck';
+import HexagonBoard from './HexagonBoard';
 
 export default React.createClass({
   render() {
