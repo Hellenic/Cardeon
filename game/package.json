@@ -63,6 +63,7 @@
     "webpack-dev-server": "1.14.1"
   },
   "devDependencies": {
+    "chai": "3.5.0",
     "less-loader": "2.2.2"
   }
 }
