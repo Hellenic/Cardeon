@@ -1,24 +1,23 @@
 'use strict';
 let path = require('path');
-let port = 7991;
-let srcPath = path.join(__dirname, '/../src');
-let publicPath = 'assets/';
+let defaultSettings = require('./defaults');
 let additionalPaths = [];
 module.exports = {
   additionalPaths: additionalPaths,
-  port: port,
+  port: defaultSettings.port,
   debug: true,
+  devtool: 'eval',
   output: {
     path: path.join(__dirname, '/../dist/assets'),
     filename: 'app.js',
-    publicPath: publicPath
+    publicPath: defaultSettings.publicPath
   },
   devServer: {
     contentBase: './src/',
     historyApiFallback: true,
     hot: true,
-    port: port,
-    publicPath: '/' + publicPath,
+    port: defaultSettings.port,
+    publicPath: defaultSettings.publicPath,
     noInfo: false
   },
   resolve: {
@@ -28,52 +27,15 @@ module.exports = {
       '.jsx'
     ],
     alias: {
-      actions: srcPath + '/actions/',
-      components: srcPath + '/components/',
-      sources: srcPath + '/sources/',
-      stores: srcPath + '/stores/',
-      styles: srcPath + '/styles/',
-      config: srcPath + '/config/' + process.env.REACT_WEBPACK_ENV
+      actions: `${ defaultSettings.srcPath }/actions/`,
+      components: `${ defaultSettings.srcPath }/components/`,
+      sources: `${ defaultSettings.srcPath }/sources/`,
+      stores: `${ defaultSettings.srcPath }/stores/`,
+      styles: `${ defaultSettings.srcPath }/styles/`,
+      config: `${ defaultSettings.srcPath }/config/` + process.env.REACT_WEBPACK_ENV
     }
   },
-  module: {
-    preLoaders: [{
-        test: /\.(js|jsx)$/,
-        include: srcPath,
-        loader: 'eslint-loader'
-      }],
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!postcss-loader'
-      },
-      {
-        test: /\.sass/,
-        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded&indentedSyntax'
-      },
-      {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
-      },
-      {
-        test: /\.less/,
-        loader: 'style-loader!css-loader!postcss-loader!less-loader'
-      },
-      {
-        test: /\.styl/,
-        loader: 'style-loader!css-loader!postcss-loader!stylus-loader'
-      },
-      {
-        // TODO icons-loader for icons?
-        test: /\.(png|jpg|gif|woff|woff2|ttf|eot|svg)$/,
-        loader: 'url-loader?limit=8192'
-      },
-      {
-        test: /\.json$/,
-        loader: "json-loader"
-      }
-    ]
-  },
+  module: {},
   postcss: function () {
     return [];
   }

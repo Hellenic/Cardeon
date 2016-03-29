@@ -1,16 +1,19 @@
-require('../semantic/dist/semantic.min.css');
 require('styles/App.less');
 
 import 'core-js/fn/object/assign';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+// import { Provider } from 'react-redux';
+// import configureStore from './stores';
+// import App from './containers/App';
+// const store = configureStore();
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import { App, About, NoMatch } from './pages';
 import { Cards, CreateCard, CardTemplates, CreateTemplate } from './pages';
 
 // Render the main component into the dom
-ReactDOM.render((
+render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Cards} />
@@ -22,3 +25,12 @@ ReactDOM.render((
     </Route>
   </Router>
 ), document.getElementById('app'));
+
+/*
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);
+*/

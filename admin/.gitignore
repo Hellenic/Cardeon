@@ -28,8 +28,3 @@ node_modules
 
 # Bower
 bower_components/
-
-
-## Generated stuff
-dist/
-semantic/dist/
