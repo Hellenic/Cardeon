@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "cardeonGame",
+    "style": "less",
+    "postcss": true
+  }
+}
