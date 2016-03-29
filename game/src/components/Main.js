@@ -1,12 +1,9 @@
 import React from 'react'
 import Title from 'react-title-component'
-import HexagonGrid from './HexagonGrid/'
-// import Deck from './Deck';
-// import HexagonBoard from './HexagonBoard';
+import HexagonGrid from '../containers/HexagonGrid'
 
-class Home extends React.Component {
-  // <Deck />
-  // <HexagonBoard height={16} width={8} />
+class Main extends React.Component {
+
   render() {
     return (
       <div>
@@ -16,6 +13,7 @@ class Home extends React.Component {
       </div>
     )
   }
+
 }
 
-export default Home;
+export default Main;
