@@ -7,7 +7,7 @@ class Game extends Component {
   render() {
     const {actions, game} = this.props;
     return (
-      <div>
+      <div className="ui grid">
         <Title render={prev => `${prev} | Game board | Cardeon - Alpha 0.02`}/>
         <Board actions={actions} />
         <Deck actions={actions} />

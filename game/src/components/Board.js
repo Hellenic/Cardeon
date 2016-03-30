@@ -7,7 +7,11 @@ class Board extends React.Component {
 
   render() {
     return (
-      <HexGrid actions={this.props.actions} {...config.board} />
+      <div className="eight wide column">
+        <h3>Game board</h3>
+        <small>Drop cards here to try out how they fight</small><br />
+        <HexGrid actions={this.props.actions} {...config.board} />
+      </div>
     )
   }
 
