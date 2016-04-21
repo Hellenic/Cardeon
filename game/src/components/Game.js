@@ -9,8 +9,8 @@ class Game extends Component {
     return (
       <div className="ui grid">
         <Title render={prev => `${prev} | Game board | Cardeon - Alpha 0.02`}/>
-        <Board actions={actions} />
-        <Deck actions={actions} />
+        <Board actions={actions} grid={game.board} />
+        <Deck actions={actions} grid={game.deck} />
       </div>
     );
   }

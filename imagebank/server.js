@@ -11,6 +11,19 @@ app.get('/', function (req, res) {
   res.send(images);
 });
 
+app.get('/files', function (req, res) {
+  var getFiles = (children) => {
+    var files = children.filter(obj => { return obj.type === "file" });
+    var f = children.filter(obj => { return obj.type === "folder" }).forEach(obj => {
+      files.push(...getFiles(obj.children));
+    });
+    
+    return files;
+  };
+
+  res.send(getFiles(images.children));
+});
+
 var port = 7993;
 app.listen(port);
 

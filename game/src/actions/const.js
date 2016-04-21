@@ -4,3 +4,6 @@ export const HEX_MOUSE_LEAVE = 'HEX_MOUSE_LEAVE';
 export const HEX_DRAG_START = 'HEX_DRAG_START';
 export const HEX_DRAG_END = 'HEX_DRAG_END';
 export const HEX_DROP = 'HEX_DROP';
+export const DECK_CREATED = 'DECK_CREATED';
+export const DECK_UPDATED = 'DECK_UPDATED';
+export const BOARD_CREATED = 'BOARD_CREATED';

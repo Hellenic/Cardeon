@@ -8,19 +8,17 @@ class Board extends React.Component {
     super(props);
 
     let grid = HexGrid.generate(config.board);
-    this.state = {
-      layout: grid.layout,
-      hexagons: grid.hexagons
-    };
+    this.props.actions.createBoard(grid);
   }
 
   render() {
+    let grid = this.props.grid;
     return (
       <div className="eight wide column">
         <h3>Game board</h3>
         <small>Drop cards here to try out how they fight</small><br />
         <HexGrid actions={this.props.actions} width={config.board.width} height={config.board.height}
-          hexagons={this.state.hexagons} layout={this.state.layout} />
+          hexagons={grid.hexagons} layout={grid.layout} />
       </div>
     )
   }
@@ -28,7 +26,8 @@ class Board extends React.Component {
 }
 
 Board.propTypes = {
-  actions: React.PropTypes.object.isRequired
+  actions: React.PropTypes.object.isRequired,
+  grid: React.PropTypes.object.isRequired
 };
 
 export default Board;

@@ -25,8 +25,6 @@ function dirTree(filename) {
 }
 
 if (module.parent == undefined) {
-    // var util = require('util');
-    // var filesObject = util.inspect(dirTree(process.argv[2]), false, null);
     var filesObject = dirTree(process.argv[2]);
     console.log(JSON.stringify(filesObject));
 }
