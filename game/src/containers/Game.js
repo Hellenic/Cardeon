@@ -1,11 +1,11 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as gridActions from '../actions/game'
+import * as gridActions from '../actions/grid'
 import Game from '../components/Game';
 
 function mapStateToProps(state) {
   return {
-    game: state.game
+    grid: state.grid
   };
 }
 

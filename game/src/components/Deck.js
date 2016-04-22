@@ -1,6 +1,7 @@
 import React from 'react'
 import CardeonAPI from '../sources/CardeonAPI';
-import config from '../config/gamegrid'
+import config from '../config/hexgrid'
+import CardUtils from '../utils/CardUtils';
 // import { HexGrid } from 'react-hexgrid';
 import { HexGrid } from '../../../../react-hexgrid/';
 
@@ -15,7 +16,7 @@ class Deck extends React.Component {
   componentWillMount() {
     CardeonAPI.getCards().then(response => {
       // Temp filtering
-      let deck = response.data.filter(card => { return card.userId == "2"; }).splice(0, 15);
+      let deck = response.data.filter(card => { return card.userId == '2'; }).splice(0, 15);
 
       // TODO Grid generation actually should be here, to generate grid to exactly to the deck size
       let hexas = this.props.grid.hexagons.map((hex, index) => {
@@ -23,7 +24,7 @@ class Deck extends React.Component {
         if (!card)
           return hex;
         let img = 'http://localhost:7993/cards/' + card.template.picture;
-        let props = { text: card.name, image: img, id: card.id }
+        let props = { text: card.name, image: img, id: card.id, arrows: CardUtils.getArrowsAsArray(card.arrows) }
         return Object.assign({}, hex, { props: props })
       });
 

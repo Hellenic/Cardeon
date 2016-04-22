@@ -5,12 +5,12 @@ import Deck from './Deck';
 
 class Game extends Component {
   render() {
-    const {actions, game} = this.props;
+    const {actions, grid} = this.props;
     return (
       <div className="ui grid">
         <Title render={prev => `${prev} | Game board | Cardeon - Alpha 0.02`}/>
-        <Board actions={actions} grid={game.board} />
-        <Deck actions={actions} grid={game.deck} />
+        <Board actions={actions} grid={grid.board} />
+        <Deck actions={actions} grid={grid.deck} />
       </div>
     );
   }
@@ -18,7 +18,7 @@ class Game extends Component {
 
 Game.propTypes = {
   actions: PropTypes.object.isRequired,
-  game: PropTypes.object.isRequired
+  grid: PropTypes.object.isRequired
 };
 
 export default Game;

@@ -1,5 +1,5 @@
 import React from 'react'
-import config from '../config/gamegrid'
+import config from '../config/hexgrid'
 // import { HexGrid } from 'react-hexgrid';
 import { HexGrid } from '../../../../react-hexgrid/';
 

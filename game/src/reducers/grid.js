@@ -14,24 +14,24 @@ module.exports = function(state = initialState, action) {
   let nextState = Object.assign({}, state);
 
   // TODO If there is some basic common actions, they should be handled in Hexgrid library
-  
+
   switch(action.type) {
     case Types.HEX_MOUSE_ENTER: {
       // console.log('Mouse enter', action.hex)
       return nextState;
-    } break;
+    }
     case Types.HEX_MOUSE_LEAVE: {
       // console.log('Mouse leave', action.hex)
       return nextState;
-    } break;
+    }
     case Types.HEX_DRAG_START: {
       // console.log('Drag started', action.hex)
       return nextState;
-    } break;
+    }
     case Types.HEX_DRAG_END: {
       // console.log('Drag ended', action.hex)
       return nextState;
-    } break;
+    }
     case Types.HEX_DROP: {
       // Add card to from deck to board
       let hex = nextState.board.hexagons.find(hexa => { return HexUtils.equals(hexa, action.hex) });
@@ -42,19 +42,19 @@ module.exports = function(state = initialState, action) {
       oldHex.props = {};
 
       return nextState;
-    } break;
+    }
     case Types.BOARD_CREATED: {
       nextState.board = action.grid;
       return nextState;
-    } break;
+    }
     case Types.DECK_CREATED: {
       nextState.deck = action.grid;
       return nextState;
-    } break;
+    }
     case Types.DECK_UPDATED: {
       nextState.deck.hexagons = action.hexagons;
       return nextState;
-    } break;
+    }
     default: {
       return state;
     }
