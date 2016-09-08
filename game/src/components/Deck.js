@@ -2,8 +2,8 @@ import React from 'react'
 import CardeonAPI from '../sources/CardeonAPI';
 import config from '../config/hexgrid'
 import CardUtils from '../utils/CardUtils';
-// import { HexGrid } from 'react-hexgrid';
-import { HexGrid } from '../../../../react-hexgrid/';
+import { HexGrid } from 'react-hexgrid';
+// import { HexGrid } from '../../../../react-hexgrid/';
 
 class Deck extends React.Component {
   constructor(props) {

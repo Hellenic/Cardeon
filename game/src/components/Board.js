@@ -1,7 +1,7 @@
 import React from 'react'
 import config from '../config/hexgrid'
-// import { HexGrid } from 'react-hexgrid';
-import { HexGrid } from '../../../../react-hexgrid/';
+import { HexGrid } from 'react-hexgrid';
+// import { HexGrid } from '../../../../react-hexgrid/';
 
 class Board extends React.Component {
   constructor(props) {

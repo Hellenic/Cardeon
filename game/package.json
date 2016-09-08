@@ -71,7 +71,7 @@
     "normalize.css": "^3.0.3",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-hexgrid": "file:///home/hellenic/Development/Web/react-hexgrid",
+    "react-hexgrid": "^0.1.5",
     "react-redux": "^4.4.1",
     "react-title-component": "^1.0.1",
     "redux": "^3.3.1"

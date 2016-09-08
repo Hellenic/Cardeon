@@ -4,7 +4,7 @@
  * src/container/HexagonGrid.js accordingly.
  */
 import * as Types from '../actions/const';
-import { HexUtils } from '../../../../react-hexgrid/';
+import { HexUtils } from 'react-hexgrid';
 const initialState = {
   deck: { hexagons: [], layout: {} },
   board: { hexagons: [], layout: {} }
